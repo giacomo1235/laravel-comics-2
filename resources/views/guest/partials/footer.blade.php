@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="col-right">
-        <img src="./images/dc-logo-bg.png" alt="">
+        <img src="/images/dc-logo-bg.png" alt="">
       </div>
     </div>
     <div class="footer-social">
@@ -62,11 +62,11 @@
       <div class="col-right">
         <ul class="social-logos">
           <li><a href="#!">follow us</a></li>
-          <li><a href="#!"><img src="./images/footer-twitter.png" alt=""></a></li>
-          <li><a href="#!"><img src="./images/footer-twitter.png" alt=""></a></li>
-          <li><a href="#!"><img src="./images/footer-youtube.png" alt=""></a></li>
-          <li><a href="#!"><img src="./images/footer-pinterest.png" alt=""></a></li>
-          <li><a href="#!"><img src="./images/footer-periscope.png" alt=""></a></li>
+          <li><a href="#!"><img src="/images/footer-twitter.png" alt=""></a></li>
+          <li><a href="#!"><img src="/images/footer-twitter.png" alt=""></a></li>
+          <li><a href="#!"><img src="/images/footer-youtube.png" alt=""></a></li>
+          <li><a href="#!"><img src="/images/footer-pinterest.png" alt=""></a></li>
+          <li><a href="#!"><img src="/images/footer-periscope.png" alt=""></a></li>
         </ul>
       </div>
 

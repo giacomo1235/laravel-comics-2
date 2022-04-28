@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <a href="{{route('home')}}"><img src="./images/dc-logo.png" alt="logo" /></a>
+        <a href="{{route('home')}}"><img src="/images/dc-logo.png" alt="logo" /></a>
         <ul>
           <li><a class="{{ Route::current()->getName() == 'characters' ? 'active' : '' }} " href="{{route('characters')}}">characters</a></li>
           <li><a class="{{ Route::current()->getName() == 'comics' ? 'active' : '' }} " href="{{route('comics')}}">comics</a></li>
