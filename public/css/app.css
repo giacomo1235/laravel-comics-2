@@ -5,12 +5,23 @@
   font-family: "Raleway", sans-serif;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 header .container {
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-content: center;
-  /* padding: 20px; */
 }
 header img {
   padding: 5px;
@@ -82,12 +93,7 @@ footer .col-4 {
 footer .col-right {
   width: 50%;
   height: 400px;
-  /* position: relative; */
   overflow: hidden;
-  /*  img {
-     position: absolute;
-     top: -23%;
-   } */
 }
 footer .footer-social {
   background-color: rgb(48, 48, 48);
@@ -231,4 +237,77 @@ footer .footer-social ul a {
 }
 .card-hero img {
   width: 100%;
+}
+.card-hero a {
+  color: white;
+  text-decoration: none;
+}
+.card-hero a h2 {
+  overflow-wrap: break-word;
+  -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+          hyphens: manual;
+}
+
+/* comic */
+.comic-img {
+  position: absolute;
+  top: 280px;
+  left: 200px;
+  border: 1px solid white;
+}
+.comic-img button {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(56, 128, 240);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+}
+.comic-img p {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(56, 128, 240);
+  padding: 2px 5px;
+}
+
+.container-comic .centered-comic {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.container-comic .centered-comic h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.container-comic .centered-comic .col-left {
+  width: 75%;
+  display: inline-block;
+}
+.container-comic .centered-comic .col-left .comic-price {
+  background-color: lightgreen;
+  padding: 10px;
+  color: aliceblue;
+}
+.container-comic .centered-comic .col-left .comic-price span {
+  color: black;
+}
+.container-comic .centered-comic .col-right {
+  width: 25%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.container-comic .bluebar {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(56, 128, 240);
 }

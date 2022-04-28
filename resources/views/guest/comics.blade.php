@@ -5,7 +5,6 @@
 @section('content')
 <main>
     <div class="container">
-        <div class="jumbotron"></div>
         <div class="current">current series</div>
         <div class="centered">
           <div class="contents">

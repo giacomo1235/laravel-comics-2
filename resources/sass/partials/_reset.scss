@@ -4,3 +4,12 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;;
 }
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}

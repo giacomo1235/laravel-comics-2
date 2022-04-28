@@ -1,4 +1,4 @@
-<header>
+<header class="clearfix">
     <div class="container">
         <a href="{{route('home')}}"><img src="/images/dc-logo.png" alt="logo" /></a>
         <ul>
@@ -14,4 +14,5 @@
           <li><a class="{{ Route::current()->getName() == 'shop' ? 'active' : '' }} " href="{{route('shop')}}">shop</a></li>
         </ul>
     </div>
+    <div class="jumbotron"></div>
 </header>
