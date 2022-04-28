@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;800;900&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  /* padding: 20px; */
+}
+header img {
+  padding: 5px;
+}
+header ul {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+header .active {
+  color: rgb(56, 128, 240);
+  border-bottom: 5px solid rgb(56, 128, 240);
+}
+header li {
+  text-transform: uppercase;
+  display: flex;
+  padding: 20px;
+  padding-bottom: 0;
+}
+header li a {
+  padding: 20px 0;
+  color: black;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 5px solid transparent;
+}
+header li a:hover {
+  color: rgb(56, 128, 240);
+  border-bottom: 5px solid rgb(56, 128, 240);
+}
+
+/* footer */
+footer {
+  height: 400px;
+  background-image: url(../images/footer-bg.jpg);
+}
+footer .main-footer {
+  display: flex;
+}
+footer .main-footer .col-left {
+  width: 50%;
+  height: 400px;
+  display: contents;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  margin-top: 30px;
+}
+footer .main-footer .col-left ul li {
+  list-style: none;
+  margin: 3px 0;
+}
+footer .main-footer .col-left ul li a {
+  color: gray;
+  text-decoration: none;
+}
+footer .main-footer .col-left ul .title-li {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+footer .col-4 {
+  width: 15%;
+  margin: 30px;
+  font-size: 1.2rem;
+}
+footer .col-right {
+  width: 50%;
+  height: 400px;
+  /* position: relative; */
+  overflow: hidden;
+  /*  img {
+     position: absolute;
+     top: -23%;
+   } */
+}
+footer .footer-social {
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-social .col-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-social img {
+  width: 35px;
+}
+footer .footer-social button {
+  height: 50px;
+  background: transparent;
+  border: 3px solid rgb(56, 128, 240);
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+  font-weight: 700;
+  margin-left: 100px;
+}
+footer .footer-social ul {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0.3;
+  align-items: center;
+  list-style: none;
+  color: rgb(56, 128, 240);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+footer .footer-social ul a {
+  text-decoration: none;
+  color: rgb(56, 128, 240);
+}
+
+/* main content */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.contents {
+  width: 80%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 0;
+  gap: 18px;
+}
+.contents h1 {
+  margin-left: 100px;
+}
+.contents h2 {
+  font-size: 1rem;
+}
+
+.jumbotron {
+  background-image: url(../images/jumbotron.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
+.current {
+  display: inline-block;
+  position: absolute;
+  top: 500px;
+  left: 7%;
+  background-color: rgb(56, 128, 240);
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  font-weight: 600;
+}
+
+.button-load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.button-load button {
+  background-color: rgb(56, 128, 240);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  margin: 20px;
+  padding: 10px 50px;
+}
+
+.cards {
+  background-color: rgb(56, 128, 240);
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 133px;
+}
+.cards img {
+  width: 70px;
+  padding: 10px;
+}
+.cards li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 30px;
+}
+.cards li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* card hero */
+.card-hero {
+  text-transform: uppercase;
+  color: white;
+  width: 15%;
+  height: 300px;
+}
+.card-hero:hover {
+  cursor: pointer;
+}
+.card-hero .title {
+  font-size: 1rem;
+}
+.card-hero img {
+  width: 100%;
+}
