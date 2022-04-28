@@ -14,11 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    
     $data = [
         'series' => config('comics')
     ];
     return view('guest.home', $data);
 })->name('home');
+
+Route::get('/comics/{id}', function ($id) {
+    $data = collect(config('comics'));
+    $selectedComic = $data->firstWhere('id', $id);
+    if ( $selectedComic === null ) abort(404);
+    return view('guest.comic', [
+        'title' => $selectedComic['title'] . ' - Laravel Comics',
+        'comic' => $selectedComic
+    ]);
+})->name('comic');
 
 Route::get('/characters', function () {
     return view('guest.characters');

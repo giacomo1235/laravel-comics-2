@@ -9,10 +9,15 @@
         <div class="current">current series</div>
         <div class="centered">
           <div class="contents">
+              @php
+               $series = config('comics')   
+              @endphp
               @foreach ($series as $serie)
                   <div class="card-hero">
-                      <img src="{{$serie['thumb']}}" alt="">
-                      <h2 class="title">{{$serie['series']}}</h2>
+                      <a href="{{ route('comic', ['id' => $serie['id']]) }}">
+                        <img src="{{$serie['thumb']}}" alt="">
+                        <h2 class="title">{{$serie['series']}}</h2>
+                      </a>
                   </div>    
               @endforeach
           </div>
